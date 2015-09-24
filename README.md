@@ -9,3 +9,7 @@ Using [ES6][] with [Babel][] ([sprockets-babel][]).
 [ES6]: http://es6-features.org/
 [Babel]: https://babeljs.io/
 [sprockets-babel]: https://github.com/70mainstreet/sprockets-babel
+
+## License
+
+CC0 1.0 Universal (Public Domain)
