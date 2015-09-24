@@ -6,6 +6,7 @@ Encoding.default_external = "UTF-8"
 class App < Sinatra::Base
   configure do
     set :assets_precompile, %w(application.js first.js next.js)
+    set :assets_js_compressor, :uglifier
     register Sinatra::AssetPipeline
 
     # Actual Rails Assets integration, everything else is Sprockets
