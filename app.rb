@@ -1,5 +1,8 @@
 Bundler.require
 
+# temporary solution against Encoding::InvalidByteSequenceError for passenger
+Encoding.default_external = "UTF-8"
+
 class App < Sinatra::Base
   configure do
     set :assets_precompile, %w(application.js)
