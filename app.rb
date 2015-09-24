@@ -2,6 +2,7 @@ Bundler.require
 
 class App < Sinatra::Base
   configure do
+    set :assets_precompile, %w(application.js)
     register Sinatra::AssetPipeline
 
     # Actual Rails Assets integration, everything else is Sprockets
